@@ -1,0 +1,40 @@
+html,body,ul,p,img,h1,h2,h3,h4,h5,h6,form,div,input,a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*È¥³ýµã»÷¸ßÁÁ*/
+    -webkit-tap-highlight-color: transparent;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #666;
+}
+input {
+    border: 1px solid #ccc;
+    outline: none;
+}
+img {
+    display: block;
+}
+body {
+    font-size: 14px;
+    font-family: "Î¢ÈíÑÅºÚ",sans-serif;
+}
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: block;
+    height: 0;
+    line-height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}

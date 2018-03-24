@@ -1,0 +1,59 @@
+
+  img {
+    display: block;
+  }
+  ul,ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .layout {
+    max-width: 992px;
+    min-width: 320px;
+    width: 100%;
+    margin: 0 auto;
+    > .banner {
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      > .banner_img {
+        //width: 800%;
+        width: 1000%;
+        overflow: hidden;
+        position: relative;
+        left: -100%;
+        > li {
+          float: left;
+          //width: 12.5%
+          width: 10%;
+          > a {
+            display: block;
+            width: 100%;
+            > img {
+              width: 100%;
+            }
+          }
+        }
+      }
+      .banner_indicator {
+        position: absolute;
+        height: 12px;
+        bottom: 2%;
+        left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+        > li {
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+          float: left;
+          margin-right: 5px;
+          border: 1px solid #fff;
+          &.active {
+            background-color: #fff;
+          }
+        }
+      }
+    }
+  }
+
